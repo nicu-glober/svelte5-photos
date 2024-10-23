@@ -27,7 +27,7 @@ export default {
     },
     plugins: [
         skeleton({
-            themes: [ themes.cerberus, themes.rose ]
+            themes: [ themes.cerberus, themes.catppuccin ]
         })
     ]
 }

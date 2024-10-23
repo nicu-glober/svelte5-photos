@@ -17,12 +17,12 @@
 	}
 </script>
 
-<aside class="alert variant-ghost-success">
-	<div class="alert-message">
-		<h3 class="h3">Success</h3>
-		<p>The order has been registered successfully!</p>
-	</div>
-</aside>
+<div
+	class="alert card w-full max-w-md border-[1px] p-4 border-surface-200-800 preset-filled-surface-100-900"
+>
+	<h3 class="h3">Success</h3>
+	<p>The order has been registered successfully!</p>
+</div>
 
 <style>
 	.alert {

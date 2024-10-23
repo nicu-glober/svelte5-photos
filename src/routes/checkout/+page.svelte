@@ -5,7 +5,7 @@
 	import { xCart, xOrder } from '$lib/store';
 	import { onMount } from 'svelte';
 
-	let order: Order = $xOrder;
+	let order: Order = $state($xOrder);
 	let photos: Photo[] = $xCart;
 	let paying = $state(false);
 
@@ -46,6 +46,7 @@
 
 	function onInputChange(event: any, inputName: 'name' | 'address' | 'email_phone') {
 		order[inputName] = event.target?.value;
+		xOrder.set(order);
 	}
 </script>
 
